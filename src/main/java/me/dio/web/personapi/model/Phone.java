@@ -22,4 +22,38 @@ public class Phone {
 	@Column(nullable = false)
 	private String numero;
 	
+	public Phone() {
+		
+	}
+
+	public Phone(Long id, PhoneType type, String numero) {
+		super();
+		this.id = id;
+		this.type = type;
+		this.numero = numero;
+	}
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public PhoneType getType() {
+		return type;
+	}
+
+	public void setType(PhoneType type) {
+		this.type = type;
+	}
+
+	public String getNumero() {
+		return numero;
+	}
+
+	public void setNumero(String numero) {
+		this.numero = numero;
+	}
 }
